@@ -88,3 +88,54 @@ button.reset{
 button:hover{
     transform: scale(120%);
 }
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        height: 60%;
+        border-width: 10px;
+    }
+    
+    h1 {
+        font-size: 32px;
+    }
+    
+    .time {
+        font-size: 24px;
+    }
+    
+    button.start, button.stop, button.reset {
+        width: 80px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        height: 50%;
+        border-width: 8px;
+        padding: 5px;
+    }
+    
+    h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    
+    .time {
+        font-size: 20px;
+        margin: 10px;
+    }
+    
+    .button-container {
+        gap: 0.5rem;
+    }
+    
+    button.start, button.stop, button.reset {
+        width: 70px;
+        padding: 8px;
+        font-size: 0.8rem;
+    }
+}
